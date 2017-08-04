@@ -39,7 +39,7 @@ def update_null_and_slash_codes(cr):  # pragma: no cover
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
-    default_code = fields.Char(required=True)
+    default_code = fields.Char(required=True, default='/')
 
 
 class ProductProduct(models.Model):
